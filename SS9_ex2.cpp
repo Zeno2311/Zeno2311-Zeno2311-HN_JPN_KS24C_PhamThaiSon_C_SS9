@@ -17,6 +17,10 @@ int main(){
 	}
 	printf("\nBan muon sua gia tri tai vi tri nao trong mang (0 den %d) : ",gioihan);
 	scanf("%d",&vitri);
+	while(vitri<0 || vitri > gioihan){
+		printf("Vi tri khong hop le vui long nhap lai vi tri : ");
+		scanf("%d",&vitri);
+		
 	printf("Moi ban nhap gia tri ban muon sua trong mang : ");
 	scanf("%d",&giatrimoi);
 	
